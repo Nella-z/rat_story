@@ -224,6 +224,7 @@ if (container__picture && params) {
     if (currentStory) {
         container__picture.innerHTML = containerPicture(currentStory);
         picture__content.innerHTML = pictureContent(currentStory);
+         picture__source.innerHTML = pictureContent(pictureSource);
     } else {
         container__picture.innerHTML = '<p>История с таким ID не найдена.</p>';
     }
