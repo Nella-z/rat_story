@@ -1,7 +1,10 @@
 
 const dialog = document.querySelector('.picture__content');
+const dialog_2 = document.querySelector('.picture__source');
 const openMobal = document.querySelector('.open-mobal');
+const openMobal_dialog = document.querySelector('.mobal-content');
 const closeMobal = document.querySelector('.close-mobal');
+const closeMobal_2 = document.querySelector('.close-mobal_2');
 const sourceMobal = document.querySelector('.source-mobal');
 
 function openModalAndBlockScroll(){
@@ -9,8 +12,7 @@ function openModalAndBlockScroll(){
     document.body.classList.add('scroll-block');
 };
 function sourceModalAndBlockScroll(){
-    dialog.showModal();
-    document.body.classList.add('scroll-block');
+    dialog_2.showModal();
 };
 function returnScroll(){
     document.body.classList.remove('scroll-block');
@@ -19,17 +21,28 @@ function close(){
     dialog.close();
     returnScroll();
 }
+function close2(){
+    dialog_2.close();
+    returnScroll();
+}
 openMobal.addEventListener('click', () => {
     openModalAndBlockScroll();
 });
+
 closeMobal.addEventListener('click', () => {
     close();
 });
+closeMobal_2.addEventListener('click', () => {
+    close2();
+});
 sourceMobal.addEventListener('click', () => {
+  close();
     sourceModalAndBlockScroll();
 });
-
-
+openMobal_dialog.addEventListener('click', () => {
+  close2();
+  openModalAndBlockScroll();
+});
 
 const audio = document.querySelector('audio');
 const playBtn = document.querySelector('.player-btn');
