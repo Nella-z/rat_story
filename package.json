@@ -1,0 +1,21 @@
+{
+  "name": "rat_story",
+  "version": "1.0.0",
+  "description": "Сайт о девяти известных картинах мирового искусства и о том, что обычно остаётся за рамками экскурсий: страсти, интриги и сплетни. Сначала сухие факты, потом аудио со сплетней.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nella-z/rat_story.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nella-z/rat_story/issues"
+  },
+  "homepage": "https://github.com/Nella-z/rat_story#readme"
+}
