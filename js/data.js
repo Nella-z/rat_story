@@ -214,8 +214,6 @@ function pictureSource(stori) {
 }
 
 
-
-
 const params = new URLSearchParams(location.search).get('id');
 
 if (container__picture && params) {
@@ -223,8 +221,14 @@ if (container__picture && params) {
 
     if (currentStory) {
         container__picture.innerHTML = containerPicture(currentStory);
-        picture__content.innerHTML = pictureContent(currentStory);
-         picture__source.innerHTML = pictureContent(pictureSource);
+        
+        if (picture__content) {
+            picture__content.innerHTML = pictureContent(currentStory);
+        }
+        
+        if (picture__source) {
+            picture__source.innerHTML = pictureSource(currentStory); 
+        }
     } else {
         container__picture.innerHTML = '<p>История с таким ID не найдена.</p>';
     }
